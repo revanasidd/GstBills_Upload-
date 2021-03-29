@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AddBills Here</title>
+	<style type="text/css" media="screen">
+		body {
+			background-color: lightblue;
+		}
+		h1{
+			color:green;
+			
+		}
+		h2{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+
+<center>
+<h1>{{msg}}<h1><br><br>
+	<h2>ADD Bills Here</h2>
+<form action="/addbills/" method="POST">
+	Date:
+	<input type="date" name="date" size="20" required><br/><br>
+	InvoiceNo:
+	<input type="text" name="invoiceno" size="20" required><br><br>
+	VendorName:
+	<input type="name" name="vendorname" size="20" required><br><br>
+	InvoiceAmount:
+	<input type="text" name="invoiceamount"  size="20" required><br><br>
+	GRN-Amount:
+	<input type="text" name="grnamount" size="20" required><br><br>
+	PaymentMode:
+	<input type="text" name="paymentmode" size="20" required><br><br>
+
+	<input type="Submit" name="Addbills" value="ADDBIILS">
+	<input type="reset" name="Clear">
+</form>
+</center>
+</body>
+</html>
